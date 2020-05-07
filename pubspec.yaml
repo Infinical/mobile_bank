@@ -34,10 +34,14 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   uses-material-design: true
+  assets:
+    - images/lets_get_started.png
+  
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins-SemiBold.ttf
-        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: fonts/Poppins-SemiBold.ttf
+        - asset: fonts/Poppins-Medium.ttf
+
 
  
