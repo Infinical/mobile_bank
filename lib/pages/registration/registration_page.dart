@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mobilebank/pages/lets_get_started.dart';
-import '../../resources/registration_provider.dart';
+import 'package:mobilebank/pages/verification/verification.dart';
+// import '../../resources/registration_provider.dart';
 
 class Registration extends StatefulWidget {
   static const String id = 'registration';
@@ -67,7 +68,8 @@ class _RegistrationState extends State<Registration> {
                     width: MediaQuery.of(context).size.width,
                     child: RaisedButton(
                       onPressed: () {
-                        register(_phoneController.text);
+                        // register(_phoneController.text);
+                        Navigator.pushNamed(context, Verification.id);
                       },
                       child: Text("Start Using",
                           style: TextStyle(color: Colors.white)),

@@ -32,6 +32,7 @@ dependencies:
   flutter_bloc: ^4.0.0
   meta: ^1.1.6
   equatable: ^1.0.0
+  pin_code_fields: ^3.0.0
 
 dev_dependencies:
   flutter_test:
