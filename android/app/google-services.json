@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "950080742877",
+    "firebase_url": "https://mobile-bank-app.firebaseio.com",
+    "project_id": "mobile-bank-app",
+    "storage_bucket": "mobile-bank-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950080742877:android:86206627de7a2696570234",
+        "android_client_info": {
+          "package_name": "com.example.mobilebank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950080742877-upt93u52ni0dsndpsu8tc17a45so5r8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilebank",
+            "certificate_hash": "9615b730d594278327f67513acf133175ce7e953"
+          }
+        },
+        {
+          "client_id": "950080742877-h0nrub9mduq6ur8idgtv3q7gq6v5fdru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3oHEYgMwGNl5x1J0bTBrE0FuEbRq4weM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950080742877-h0nrub9mduq6ur8idgtv3q7gq6v5fdru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

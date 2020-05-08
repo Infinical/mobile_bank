@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mobilebank/pages/registration_page.dart';
 
 class LetsGetStarted extends StatelessWidget {
+  static const String id = 'lets_get_started';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,8 +34,13 @@ class LetsGetStarted extends StatelessWidget {
           ),
           SizedBox(height: MediaQuery.of(context).size.height * 0.15),
           RaisedButton(
-              onPressed: () {},
-              child: Text('Create Account',style: TextStyle(color: Colors.white),),
+              onPressed: () {
+                Navigator.pushNamed(context, Registration.id);
+              },
+              child: Text(
+                'Create Account',
+                style: TextStyle(color: Colors.white),
+              ),
               padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.width * 0.03,
                   bottom: MediaQuery.of(context).size.width * 0.03,
@@ -41,7 +48,10 @@ class LetsGetStarted extends StatelessWidget {
                   right: MediaQuery.of(context).size.width * 0.3)),
           FlatButton(
               onPressed: () {},
-              child: Text('Login to Account',style: TextStyle(color: Color(0xFF2573D5)),),
+              child: Text(
+                'Login to Account',
+                style: TextStyle(color: Color(0xFF2573D5)),
+              ),
               padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.width * 0.03,
                   bottom: MediaQuery.of(context).size.width * 0.03,
