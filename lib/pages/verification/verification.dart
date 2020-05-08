@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mobilebank/pages/personal_info/personal_info.dart';
 import 'package:mobilebank/pages/registration/registration_page.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -54,7 +55,7 @@ class _VerificationState extends State<Verification> {
                   child: RaisedButton(
                     onPressed: () {
                       // register(_phoneController.text);
-                      // Navigator.pushNamed(context, Verification.id);
+                      Navigator.pushNamed(context, PersonalInfo.id);
                     },
                     child: Text("Continue",
                         style: TextStyle(color: Colors.white)),
