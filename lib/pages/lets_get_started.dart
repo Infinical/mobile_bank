@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobilebank/pages/registration_page.dart';
+
+import 'registration/registration_page.dart';
+
 
 class LetsGetStarted extends StatelessWidget {
   static const String id = 'lets_get_started';

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobilebank/pages/lets_get_started.dart';
-import 'package:mobilebank/pages/registration_page.dart';
+
+import 'pages/registration/registration_page.dart';
 
 void main() {
   runApp(MyApp());
