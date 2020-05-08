@@ -44,6 +44,7 @@ flutter:
   uses-material-design: true
   assets:
     - images/lets_get_started.png
+    - images/success.png
   
   fonts:
     - family: Poppins

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobilebank/pages/lets_get_started.dart';
 import 'package:mobilebank/pages/personal_info/personal_info.dart';
+import 'package:mobilebank/pages/success/success.dart';
 import 'package:mobilebank/pages/verification/verification.dart';
 
 import 'pages/registration/registration_page.dart';
@@ -46,7 +47,8 @@ class MyApp extends StatelessWidget {
         LetsGetStarted.id: (context) => LetsGetStarted(),
         Registration.id: (context) => Registration(),
         Verification.id: (context) => Verification(),
-        PersonalInfo.id: (context) => PersonalInfo()
+        PersonalInfo.id: (context) => PersonalInfo(),
+        Success.id: (context) => Success()
       },
     );
   }

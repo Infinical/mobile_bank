@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mobilebank/pages/registration/registration_page.dart';
+import 'package:mobilebank/pages/success/success.dart';
 
 class PersonalInfo extends StatefulWidget {
   static const String id = 'personal_info';
@@ -101,7 +102,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                           child: RaisedButton(
                             onPressed: () {
                               // register(_phoneController.text);
-                              // Navigator.pushNamed(context, PersonalInfo.id);
+                              Navigator.pushNamed(context, Success.id);
                             },
                             child: Text("Continue",
                                 style: TextStyle(color: Colors.white)),
