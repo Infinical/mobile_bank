@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:mobilebank/pages/lets_get_started.dart';
-import 'package:mobilebank/pages/registration_page.dart';
+import 'package:mobilebank/pages/personal_info/personal_info.dart';
+import 'package:mobilebank/pages/success/success.dart';
+import 'package:mobilebank/pages/verification/verification.dart';
+
+import 'pages/registration/registration_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-Map<int, Color> color =
-{
-50:Color.fromRGBO(41, 48, 77, .1),
-100:Color.fromRGBO(41, 48, 77, .2),
-200:Color.fromRGBO(41, 48, 77, .3),
-300:Color.fromRGBO(41, 48, 77, .4),
-400:Color.fromRGBO(41, 48, 77, .5),
-500:Color.fromRGBO(41, 48, 77, .6),
-600:Color.fromRGBO(41, 48, 77, .7),
-700:Color.fromRGBO(41, 48, 77, .8),
-800:Color.fromRGBO(41, 48, 77, .9),
-900:Color.fromRGBO(41, 48, 77, 1),
+Map<int, Color> color = {
+  50: Color.fromRGBO(41, 48, 77, .1),
+  100: Color.fromRGBO(41, 48, 77, .2),
+  200: Color.fromRGBO(41, 48, 77, .3),
+  300: Color.fromRGBO(41, 48, 77, .4),
+  400: Color.fromRGBO(41, 48, 77, .5),
+  500: Color.fromRGBO(41, 48, 77, .6),
+  600: Color.fromRGBO(41, 48, 77, .7),
+  700: Color.fromRGBO(41, 48, 77, .8),
+  800: Color.fromRGBO(41, 48, 77, .9),
+  900: Color.fromRGBO(41, 48, 77, 1),
 };
 
 class MyApp extends StatelessWidget {
@@ -42,7 +45,10 @@ class MyApp extends StatelessWidget {
       initialRoute: LetsGetStarted.id,
       routes: {
         LetsGetStarted.id: (context) => LetsGetStarted(),
-        Registration.id: (context) => Registration()
+        Registration.id: (context) => Registration(),
+        Verification.id: (context) => Verification(),
+        PersonalInfo.id: (context) => PersonalInfo(),
+        Success.id: (context) => Success()
       },
     );
   }

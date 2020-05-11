@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mobilebank/pages/lets_get_started.dart';
+import 'package:mobilebank/pages/verification/verification.dart';
+// import '../../resources/registration_provider.dart';
 
 class Registration extends StatefulWidget {
   static const String id = 'registration';
@@ -10,6 +12,8 @@ class Registration extends StatefulWidget {
 
 class _RegistrationState extends State<Registration> {
   final _formKey = GlobalKey<FormState>();
+  final TextEditingController _phoneController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,9 +50,16 @@ class _RegistrationState extends State<Registration> {
                       child: Column(
                         children: <Widget>[
                           TextFormField(
+                            controller: _phoneController,
                             decoration: InputDecoration(
                                 labelText: "Enter your phone number"),
                             keyboardType: TextInputType.phone,
+                            validator: (String value) {
+                              if (value.isEmpty) {
+                                return 'Please enter your phone number';
+                              }
+                              return null;
+                            },
                           )
                         ],
                       )),
@@ -56,7 +67,10 @@ class _RegistrationState extends State<Registration> {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        // register(_phoneController.text);
+                        Navigator.pushNamed(context, Verification.id);
+                      },
                       child: Text("Start Using",
                           style: TextStyle(color: Colors.white)),
                       padding: EdgeInsets.only(
