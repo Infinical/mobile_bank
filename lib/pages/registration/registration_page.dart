@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:mobilebank/pages/lets_get_started.dart';
 import 'package:mobilebank/pages/verification/verification.dart';
 // import '../../resources/registration_provider.dart';
@@ -27,8 +27,8 @@ class _RegistrationState extends State<Registration> {
                 children: <Widget>[
                   SizedBox(height: MediaQuery.of(context).size.height * 0.06),
                   IconButton(
-                      icon: FaIcon(
-                        FontAwesomeIcons.angleLeft,
+                      icon: Icon(
+                        LineAwesomeIcons.angle_left,
                         size: MediaQuery.of(context).size.height * 0.05,
                       ),
                       onPressed: () {

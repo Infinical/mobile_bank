@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobilebank/pages/home_page/home_page.dart';
 
 class Success extends StatelessWidget {
   static const String id = 'success';
@@ -49,7 +50,7 @@ class Success extends StatelessWidget {
                 child: RaisedButton(
                   onPressed: () {
                     // register(_phoneController.text);
-                    // Navigator.pushNamed(context, Success.id);
+                    Navigator.pushNamed(context, HomePage.id);
                   },
                   child: Text("Start Using",
                       style: TextStyle(color: Colors.white)),

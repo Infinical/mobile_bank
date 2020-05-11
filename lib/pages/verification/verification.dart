@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:mobilebank/pages/personal_info/personal_info.dart';
 import 'package:mobilebank/pages/registration/registration_page.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
@@ -24,8 +24,8 @@ class _VerificationState extends State<Verification> {
               children: <Widget>[
                 SizedBox(height: MediaQuery.of(context).size.height * 0.06),
                 IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.angleLeft,
+                    icon: Icon(
+                      LineAwesomeIcons.angle_left,
                       size: MediaQuery.of(context).size.height * 0.05,
                     ),
                     onPressed: () {
