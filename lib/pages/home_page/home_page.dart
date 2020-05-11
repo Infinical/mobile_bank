@@ -33,14 +33,66 @@ class _HomePage extends State<HomePage> {
             ),
             icon: Icon(LineAwesomeIcons.home),
             title: Text('Home')),
-        // BottomNavigationBarItem(
-        //     icon: FaIcon(FontAwesomeIcons.home), title: Text('Home')),
         BottomNavigationBarItem(
-            icon: Icon(LineAwesomeIcons.credit_card), title: Text('Cards')),
+            activeIcon: ShaderMask(
+              shaderCallback: (Rect bounds) {
+                return LinearGradient(
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
+                        colors: <Color>[
+                          Colors.blue,
+                          Color(0xFF29304D),
+                        ],
+                        tileMode: TileMode.repeated)
+                    .createShader(bounds);
+              },
+              child: Icon(
+                LineAwesomeIcons.credit_card,
+                color: Colors.grey,
+              ),
+            ),
+            icon: Icon(LineAwesomeIcons.credit_card),
+            title: Text('Cards')),
         BottomNavigationBarItem(
-            icon: Icon(LineAwesomeIcons.map), title: Text('Map')),
+            activeIcon: ShaderMask(
+              shaderCallback: (Rect bounds) {
+                return LinearGradient(
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
+                        colors: <Color>[
+                          Colors.blue,
+                          Color(0xFF29304D),
+                        ],
+                        tileMode: TileMode.repeated)
+                    .createShader(bounds);
+              },
+              child: Icon(
+                LineAwesomeIcons.map,
+                color: Colors.grey,
+              ),
+            ),
+            icon: Icon(LineAwesomeIcons.map),
+            title: Text('Map')),
         BottomNavigationBarItem(
-            icon: Icon(LineAwesomeIcons.user), title: Text('Profile')),
+            activeIcon: ShaderMask(
+              shaderCallback: (Rect bounds) {
+                return LinearGradient(
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
+                        colors: <Color>[
+                          Colors.blue,
+                          Color(0xFF29304D),
+                        ],
+                        tileMode: TileMode.repeated)
+                    .createShader(bounds);
+              },
+              child: Icon(
+                LineAwesomeIcons.user,
+                color: Colors.grey,
+              ),
+            ),
+            icon: Icon(LineAwesomeIcons.user),
+            title: Text('Profile')),
       ]),
     );
   }
